@@ -1,0 +1,115 @@
+<html>
+
+<head>
+    <title>Philippine National Heroes</title>
+    <link rel="stylesheet" href="heroes.css">
+</head>
+
+<body>
+    <div class="hero">
+        <h1>Philippine National Heroes</h1>
+
+        <div class="container-hero">
+            <div class="indicator">
+                <span class="btn-1 active"></span>
+                <span class="btn-1"></span>
+                <span class="btn-1"></span>
+                <span class="btn-1"></span>
+            </div>
+            <div class="heroes">
+                <div class="slide-row" id="slide">
+                    <div class="slide-col">
+                        <div class="user-text">
+                            <p>
+                                (August 30, 1850 to July 4, 1896) Better known by his pen name Plaridel, he was a Filipino writer, lawyer, journalist, and freemason. He, along with Jose Rizal and Graciano Lopez Jaena, became known as the leaders of the Reform Movement in Spain.
+                            </p>
+                            <h3>Marcelo Del Pilar</h3>
+                        </div>
+                        <div class="user-img">
+                            <img src="marcelo.jpg">
+                        </div>
+                    </div>
+
+                    <div class="slide-col">
+                        <div class="user-text">
+                            <p>(October 23, 1857 to December 7, 1899) He was a Filipino painter, sculptor and a political activist of the Philippine Revolution during the late 19th century. He became one of the first recognized Philippine artists.
+                            </p>
+                            <h3>Juan Luna</h3>
+                        </div>
+                        <div class="user-img">
+                            <img src="juan.jpg">
+                        </div>
+                    </div>
+
+                    <div class="slide-col">
+                        <div class="user-text">
+                            <p>(January 6, 1812 to March 2, 1919) She was a Filipina revolutionary who became known as Tandang Sora because of her age during the Philippine Revolution. She was known as the “Grand Woman of the Revolution” and the “Mother of Balintawak”.
+                            </p>
+                            <h3>Melchora Aquino</h3>
+                        </div>
+                        <div class="user-img">
+                            <img src="melchora.jpg">
+                        </div>
+                    </div>
+
+                    <div class="slide-col">
+                        <div class="user-text">
+                            <p>
+                                He was a ruler of Mactan in the Visayas. Modern Philippine society regards him as the first Filipino hero because he was the first native to resist Imperial Spanish colonization.
+                            </p>
+                            <h3>Lapu-Lapu</h3>
+                        </div>
+                        <div class="user-img">
+                            <img src="lapu.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var btn = document.getElementsByClassName("btn-1");
+            var slide = document.getElementById("slide")
+
+            btn[0].onclick = function() {
+                slide.style.transform = "translateX(0px)";
+                for (i = 0; i < 4; i++) {
+                    btn[i].classList.remove("active");
+                }
+                this.classList.add("active");
+            }
+            btn[1].onclick = function() {
+                slide.style.transform = "translateX(-800px)";
+                for (i = 0; i < 4; i++) {
+                    btn[i].classList.remove("active");
+                }
+                this.classList.add("active");
+            }
+            btn[2].onclick = function() {
+                slide.style.transform = "translateX(-1600px)";
+                for (i = 0; i < 4; i++) {
+                    btn[i].classList.remove("active");
+                }
+                this.classList.add("active");
+            }
+            btn[3].onclick = function() {
+                slide.style.transform = "translateX(-2400px)";
+                for (i = 0; i < 4; i++) {
+                    btn[i].classList.remove("active");
+                }
+                this.classList.add("active");
+            }
+
+        </script>
+
+        <div class="more">
+            <a href="second.html">
+                <button>See more heroes</button></a>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,639 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: rgba(0, 0.5, 0, 0.4);
+    height: 100vh;
+}
+
+.video-background {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio:16/9) {
+    .video-background {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio:16/9) {
+    .video-background {
+        width: auto;
+        height: 800px;
+    }
+}
+
+.logo {
+    margin: 10px 0 0 10px;
+    height: 150px;
+}
+
+.header button {
+    padding: 5px 20px;
+    background: blue;
+    color: whitesmoke;
+    font-size: 16px;
+    border: 0;
+    position: absolute;
+    right: 10%;
+    top: 5%;
+}
+
+.message {
+    position: relative;
+    text-align: center;
+    font-family: monospace;
+    color: wheat;
+    top: 5px;
+}
+
+.message h2 {
+    font-size: 64px;
+    font-weight: 80;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.btn {
+    font-size: 15px;
+    color: white;
+    margin: 20px;
+    padding: 10px 22px;
+    text-decoration: none;
+    border: 5px solid blue;
+    border-radius: 25px;
+}
+
+.btn-love:hover {
+    background: darkblue;
+    transition: 0.5s;
+}
+
+.btn-heart:hover {
+    background: darkgreen;
+    transition: 0.5s;
+}
+
+/*-------HISTORY-------*/
+
+.container-history {
+    background-image: url(background.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+
+}
+
+h1 {
+    text-align: center;
+    letter-spacing: 20px;
+    padding-top: 100px;
+    color: white;
+    font-size: 40px;
+}
+
+.feature h1::after {
+    content: '';
+    background: skyblue;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 50px;
+
+}
+
+p {
+    text-indent: 80px;
+    color: floralwhite;
+    font-family: cursive;
+    font-size: 25px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: justify;
+
+}
+
+/*-------images-------*/
+
+.slide {
+    padding: 0;
+    margin: 0;
+    background-color: gainsboro;
+}
+
+.slide h1 {
+    margin-top: 50px;
+    margin-left: 510px;
+    font-size: 60px;
+    font-family: monospace;
+    font-weight: lighter;
+    color: black;
+}
+
+.slider-frame {
+    overflow: hidden;
+    height: 800px;
+    width: 1200px;
+    margin-left: 360px;
+    margin-top: 20px;
+}
+
+/*----------SLIDE ANIMATION----------*/
+
+@-webkit-keyframes slide_animation {
+    0% {
+        left: 0px;
+    }
+
+    10% {
+        left: 0px;
+    }
+
+    20% {
+        left: 1200px;
+    }
+
+    30% {
+        left: 1200px;
+    }
+
+    40% {
+        left: 2400px;
+    }
+
+    50% {
+        left: 2400px;
+    }
+
+    60% {
+        left: 1200px;
+    }
+
+    70% {
+        left: 1200px;
+    }
+
+    80% {
+        left: 0px;
+    }
+
+    90% {
+        left: 0px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+.slide-images {
+    width: 3600px;
+    height: 800px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    animation-name: slide_animation;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+.img-container {
+    height: 800px;
+    width: 1200px;
+    position: relative;
+    float: left;
+}
+
+/*-------------END OF ANIMATION PART-------------*/
+
+/*--------information-------*/
+
+.container-philippines {
+    background-image: url(home.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.information h1 {
+    text-align: center;
+    letter-spacing: 5px;
+    padding-top: 100px;
+    color: black;
+    font-size: 40px;
+}
+
+.information h1::after {
+    content: '';
+    background: blue;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 50px;
+
+}
+
+.information p {
+    text-indent: 80px;
+    color: black;
+    font-family: inherit;
+    font-size: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: justify;
+}
+
+/*--------INVASION OF THE PHILIPPINES-------*/
+.container {
+    width: 1000px;
+    height: 400px;
+    background-color: gainsboro;
+    margin: 120px auto;
+    display: flex;
+}
+
+.col {
+    height: 100%;
+    flex: 1;
+    color: black;
+    box-sizing: border-box;
+    padding: 25px;
+    position: relative;
+    transition: 0.6s;
+}
+
+.col:nth-child(1) {
+    background-color: darkgoldenrod;
+}
+
+.col:nth-child(2) {
+    background-color: dodgerblue;
+}
+
+.col:nth-child(3) {
+    background-color: palevioletred;
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.col button {
+    border: 1px solid black;
+    background: transparent;
+    outline: none;
+    padding: 8px 18px;
+    color: whitesmoke;
+    border-radius: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.col img {
+    width: 200;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.col:hover {
+    flex-grow: 2.5
+}
+
+/*--------HAPPENINGS THE PHILIPPINES-------*/
+.container-happen {
+    display: flex;
+    width: 100%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.box {
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 2%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, .1);
+    line-height: 0;
+}
+
+.box > img {
+    width: 200%;
+    height: calc(100% - 10vh);
+    object-fit: cover;
+    transition: .5s;
+}
+
+.box:hover {
+    flex: 1 1 50%;
+}
+
+.box:hover > img {
+    width: 100%;
+    height: 100%;
+}
+
+/*--------TEXT NATIONAL HEROES PHILIPPINES-------*/
+
+.text {
+    font-family: 'Pacifico', cursive;
+    background: url(home.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*-- Sign Styles --*/
+.wrap {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.word {
+    font-size: 8em;
+    text-align: center;
+    line-height: 1;
+    color: #c6e2ff;
+    animation: neon 0.08s ease-in-out infinite alternate;
+}
+
+@keyframes neon {
+    from {
+        text-shadow: 0 0 6px rgba(202, 228, 225, 0.92), 0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(30, 132, 242, 0.52), 0 0 21px rgba(30, 132, 242, 0.92), 0 0 34px rgba(30, 132, 242, 0.78), 0 0 54px rgba(30, 132, 242, 0.92);
+    }
+
+    to {
+        text-shadow: 0 0 6px rgba(202, 228, 225, 0.98), 0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(30, 132, 242, 0.58), 0 0 22px rgba(30, 132, 242, 0.84), 0 0 38px rgba(30, 132, 242, 0.88), 0 0 60px rgba(30, 132, 242, 1);
+    }
+}
+
+/*--------heroes 1-------*/
+.hero {
+    background: gray;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.hero h1 {
+    text-align: center;
+    padding-top: 80px;
+    font-size: 40px;
+    color: whitesmoke;
+}
+
+.slide-row {
+    display: flex;
+    width: 3200px;
+    transition: 0.5s;
+}
+
+.slide-col {
+    width: 800px;
+    height: 400px;
+    position: relative;
+}
+
+.user-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+.user-img img {
+    height: 100%;
+    border-radius: 10px;
+}
+
+.user-text {
+    background: #2d3a59;
+    width: 520px;
+    height: 270px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    color: #d3d4d6;
+    padding: 45px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.user-text p {
+    font-size: 18px;
+    line-height: 24px
+}
+
+.user-text h3 {
+    margin: 35px 0 5px;
+    color: navajowhite;
+}
+
+.container-hero {
+    width: 800px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.indicator {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -50px;
+}
+
+.indicator .btn-1 {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin: 4px;
+    border-radius: 15px;
+    background: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.indicator .active {
+    width: 45px;
+}
+
+.heroes {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.more button {
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 20px;
+    padding: 8px;
+    width: 200px;
+    background-color: #00999c;
+    color: white;
+    cursor: pointer;
+    padding: 0 50px;
+}
+
+.more button:hover {
+    transition: 1s;
+    background-color: #ecf5f5;
+    color: #00999c;
+}
+
+@media screen and (max-width:1200px) {
+    .inner-section {
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .more {
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+
+    .inner-section {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .more {
+        padding: 0;
+    }
+
+    .inner-section {
+        padding: 60px;
+    }
+
+    .more button {
+        font-size: 19px;
+        padding: 5px;
+        width: 160px;
+    }
+}
+
+/*-------independence--------*/
+
+.container-independence {
+    background-color: gray;
+    background-position: center;
+    background-size: contain;
+    height: auto;
+    width: auto;
+}
+
+.independence h1 {
+    text-align: center;
+    letter-spacing: 5px;
+    padding-top: 100px;
+    color: black;
+    font-size: 40px;
+}
+
+.independence h1::after {
+    content: '';
+    background: blue;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 50px;
+
+}
+
+.independence p {
+    text-indent: 80px;
+    color: black;
+    font-family: inherit;
+    font-size: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: justify;
+}
+
+/*--------last part-------*/
+
+.container-last {
+    background-color: burlywood;
+    background-position: center;
+    background-size: contain;
+    height: auto;
+    width: auto;
+}
+
+.last h1 {
+    text-align: center;
+    letter-spacing: 5px;
+    padding-top: 100px;
+    color: black;
+    font-size: 40px;
+}
+
+.last h1::after {
+    content: '';
+    background: red;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 50px;
+
+}
+
+.last p {
+    color: black;
+    font-family: inherit;
+    font-size: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+}
+
+.sources h3 {
+    text-align: left;
+    letter-spacing: 5px;
+    padding-top: 2px;
+    color: black;
+    font-size: 25px;
+}
+
+.sources p {
+    color: black;
+    font-family: monospace;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: justify;
+}
+
+.footer p {
+    font-size: 15px;
+}

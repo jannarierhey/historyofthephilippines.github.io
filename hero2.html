@@ -1,0 +1,111 @@
+<html>
+
+<head>
+    <title>Philippine National Heroes</title>
+    <link rel="stylesheet" href="heroes.css">
+</head>
+
+<body>
+    <div class="hero">
+        <h1>Philippine National Heroes</h1>
+
+        <div class="container-hero">
+            <div class="indicator">
+                <span class="btn-1 active"></span>
+                <span class="btn-1"></span>
+                <span class="btn-1"></span>
+                <span class="btn-1"></span>
+            </div>
+            <div class="heroes">
+                <div class="slide-row" id="slide">
+                    <div class="slide-col">
+                        <div class="user-text">
+                            <p>
+                                Gomburza refers to the three Filipino Catholic priests who were executed on February 17, 1872 at Bagumbayan, Philippines by Spanish colonial authorities on charges of subversion arising from the 1872 Cavite mutiny. Their execution had a profound effect on many late 19th-century Filipinos.
+                            </p>
+                            <h3>GomBurZa</h3>
+                        </div>
+                        <div class="user-img">
+                            <img src="gomburza.jpg">
+                        </div>
+                    </div>
+
+                    <div class="slide-col">
+                        <div class="user-text">
+                            <p>(December 15, 1875 to April 16, 1899) He was a Filipino General during the Philippine Revolution. He was elected Secretary of State for the Haring Bayang Katagalugan, a revolutionary government established during the outbreak of hostilities. (Brains of the Katipunan).</p>
+                            <h3>Emilio Jacinto</h3>
+                        </div>
+                        <div class="user-img">
+                            <img src="emilioj.jpg">
+                        </div>
+                    </div>
+
+                    <div class="slide-col">
+                        <div class="user-text">
+                            <p>(1856-1896) Founder of the nespaper La Solidaridad, which became the vehicle of expression for Filipino Propaganda in Spain.</p>
+                            <h3>Graciano Lopez Jaena</h3>
+                        </div>
+                        <div class="user-img">
+                            <img src="graciano.jpg">
+                        </div>
+                    </div>
+
+                    <div class="slide-col">
+                        <div class="user-text">
+                            <p>The greatest general of the Revolution. He was one of the propagandists in Spain who were working for political reforms in the Philippines.</p>
+                            <h3>Antonio Luna</h3>
+                        </div>
+                        <div class="user-img">
+                            <img src="antonio.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var btn = document.getElementsByClassName("btn-1");
+            var slide = document.getElementById("slide")
+
+            btn[0].onclick = function() {
+                slide.style.transform = "translateX(0px)";
+                for (i = 0; i < 4; i++) {
+                    btn[i].classList.remove("active");
+                }
+                this.classList.add("active");
+            }
+            btn[1].onclick = function() {
+                slide.style.transform = "translateX(-800px)";
+                for (i = 0; i < 4; i++) {
+                    btn[i].classList.remove("active");
+                }
+                this.classList.add("active");
+            }
+            btn[2].onclick = function() {
+                slide.style.transform = "translateX(-1600px)";
+                for (i = 0; i < 4; i++) {
+                    btn[i].classList.remove("active");
+                }
+                this.classList.add("active");
+            }
+            btn[3].onclick = function() {
+                slide.style.transform = "translateX(-2400px)";
+                for (i = 0; i < 4; i++) {
+                    btn[i].classList.remove("active");
+                }
+                this.classList.add("active");
+            }
+
+        </script>
+
+        <div class="more">
+            <a href="hero3.html">
+                <button>See more heroes</button></a>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
